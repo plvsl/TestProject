@@ -38,11 +38,7 @@ public class AmazonSearchPage {
             String title = searchTitles.get(i).getText();
 
             Assert.assertTrue(title.contains("iPhone"));
-
-
         }
-
     }
-
 
 }

@@ -8,6 +8,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
+
 public class TestBase {
 
     protected WebDriver driver;
@@ -21,6 +22,8 @@ public class TestBase {
         WebDriverManager.chromedriver().setup();
 
         driver = new ChromeDriver();
+
+        //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
         Configuration.browser = "chrome";
         Configuration.screenshots = false;
